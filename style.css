@@ -26,26 +26,36 @@ body {
     display: flex;
     flex-flow: row wrap;
     border: none;
+    
 }
 
 a{
     border: 1px black solid;
     height: 10px;
-    width: 25px;
+    width: 15px;
     text-align: center;
+    margin: 2%;
+    
 
+}
+
+.empty:empty::after {
+    content: ".";
+    visibility: hidden;
 }
 
 .left{
     display: flex;
     flex-flow: wrap;
     flex-direction: column;
-
+    align-content: flex-end;
+    margin-right: 5px;
 }
 
 .links {
     display: flex;
     flex-direction: column;
+    align-items: baseline;
 }
 
 .img2 {
@@ -58,7 +68,7 @@ a{
     border-top: 1px black solid;
     border-left: 1px black solid;
     border-right: 1px black solid;
-    padding: 43px;
+    padding: 45px;
 }
 
 .outline:last-child {
@@ -83,6 +93,9 @@ h1 {
 
 .text2{
     border: none;
+    display: flex;
+    justify-content: baseline;
+    height: 5%;
 }
 
 
